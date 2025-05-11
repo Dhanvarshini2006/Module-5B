@@ -1,21 +1,31 @@
-# # NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+# # NumPy Program:  Find the sum of last column in a given numpy array
 
 ## 🎯 Aim
-To write a Python program using **NumPy** that finds the indices where elements in array `x` are greater than or equal to their corresponding elements in array `y`.
+To write a Python program using **NumPy** that find the sum of last column in a given numpy array
 
 ## 🧠 Algorithm
-1. **Import NumPy**: Import the NumPy library.
-2. **Define Arrays**: Define two NumPy arrays, `x` and `y`, with the same shape (i.e., same number of elements).
-3. **Use Boolean Indexing**: 
-   - `x > y` gives a boolean array where elements of `x` are greater than `y`.
-   - `x == y` gives a boolean array where elements of `x` are equal to `y`.
-4. **Find Indices**: Use `np.where()` to get the indices where the conditions `x >= y` are satisfied.
-5. **Print Indices**: Print the indices where the condition holds true.
+1. Take a list of 12 numbers as input.
+2. Convert the list into a NumPy array.
+3. Reshape the array into a 4x3 matrix.
+4. Calculate the sum of the third column.
+5. Display the reshaped matrix and the column sum.
+
 
 ## 🧾 Program
+```
 
-Add code here
+import numpy as np
+a=eval(input())
+z=np.array(a)
+n=z.reshape(4,3)
+print(n)
+s=np.sum(n[:,2])
+print(s)
+```
 
 ## Output
+![image](https://github.com/user-attachments/assets/f771d0a7-65e1-445d-a818-692b26674445)
+
 
 ## Result
+Thus the program executed successfully.
